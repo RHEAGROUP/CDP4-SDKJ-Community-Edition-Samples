@@ -8,10 +8,23 @@
   <artifactId>cdp4sdkj-sample</artifactId>
   <version>0.1.0</version>
 
+  <repositories>
+    <repository>
+      <id>oss.sonatype.org-snapshot</id>
+      <url>http://oss.sonatype.org/content/repositories/snapshots</url>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
+
   <dependencies>
     <dependency>
       <groupId>com.rheagroup</groupId>
-      <artifactId>cdp4services</artifactId>
+      <artifactId>cdp4servicesdal</artifactId>
       <version>1.0.0</version>
     </dependency>
   </dependencies>
