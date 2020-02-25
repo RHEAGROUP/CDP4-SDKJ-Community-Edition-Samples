@@ -99,10 +99,10 @@ public class SimpleConsoleApp {
     String pass = in.nextLine().isEmpty() ? "pass" : in.nextLine();
 
     System.out.println(
-        "Enter a server's URL for future requests (default is https://cdp4services-test.rheagroup.com, just press Enter):");
+        "Enter a server's URL for future requests (default is https://cdp4services-test.cdp4.org, just press Enter):");
     this.uri =
         URI.create(
-            in.nextLine().isEmpty() ? "https://cdp4services-test.rheagroup.com" : in.nextLine());
+            in.nextLine().isEmpty() ? "https://cdp4services-test.cdp4.org" : in.nextLine());
 
     var dal = new CdpServicesDal();
     this.credentials = new Credentials(userName, pass, this.uri, null);
